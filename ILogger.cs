@@ -8,6 +8,7 @@ namespace Grammophone.Logging
 {
 	/// <summary>
 	/// Interface for writing entries to the configured log writers.
+	/// Implementations must be thread safe.
 	/// </summary>
 	public interface ILogger
 	{
