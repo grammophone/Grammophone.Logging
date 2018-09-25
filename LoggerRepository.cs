@@ -33,7 +33,7 @@ namespace Grammophone.Logging
 			if (loggerProvider == null) throw new ArgumentNullException(nameof(loggerProvider));
 
 			this.loggerProvider = loggerProvider;
-			this.loggersByNameCache = new MRUCache<string, ILogger>(loggerName => this.loggerProvider.CreateLogger(loggerName), cacheSize);
+			this.loggersByNameCache = new MRUCache<string, ILogger>(this.loggerProvider.CreateLogger, cacheSize);
 		}
 
 		#endregion
