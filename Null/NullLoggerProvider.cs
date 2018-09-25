@@ -15,6 +15,6 @@ namespace Grammophone.Logging.Null
 		/// Creates a <see cref="NullLogger"/> irrespective of <paramref name="loggerName"/>.
 		/// </summary>
 		/// <returns>Returns a new <see cref="NullLogger"/>.</returns>
-		public ILogger GetLogger(string loggerName) => new NullLogger();
+		public ILogger CreateLogger(string loggerName) => new NullLogger();
 	}
 }

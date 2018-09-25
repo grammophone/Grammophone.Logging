@@ -12,10 +12,10 @@ namespace Grammophone.Logging
 	public interface ILoggerProvider
 	{
 		/// <summary>
-		/// Get the logger registered under a specified name.
+		/// Create the logger registered under a specified name.
 		/// </summary>
 		/// <param name="loggerName">The name under which the logger is registered.</param>
 		/// <returns>Returns the <see cref="ILogger"/> requested.</returns>
-		ILogger GetLogger(string loggerName);
+		ILogger CreateLogger(string loggerName);
 	}
 }
