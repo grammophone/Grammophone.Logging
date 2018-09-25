@@ -45,10 +45,17 @@
   <ItemGroup>
     <Compile Include="ILogger.cs" />
     <Compile Include="ILoggerProvider.cs" />
+    <Compile Include="LoggerRepository.cs" />
     <Compile Include="LogLevel.cs" />
     <Compile Include="Null\NullLogger.cs" />
     <Compile Include="Null\NullLoggerProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Grammophone.Caching\Grammophone.Caching.csproj">
+      <Project>{2c834c5b-aa21-43fa-826e-398ab4de25ac}</Project>
+      <Name>Grammophone.Caching</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
