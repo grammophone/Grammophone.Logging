@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Composite\CompositeLogger.cs" />
+    <Compile Include="Composite\CompositeLoggerProvider.cs" />
     <Compile Include="ILogger.cs" />
     <Compile Include="ILoggerProvider.cs" />
     <Compile Include="LoggerRepository.cs" />
