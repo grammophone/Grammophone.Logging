@@ -11,6 +11,10 @@ namespace Grammophone.Logging.Null
 	/// </summary>
 	public class NullLogger : ILogger
 	{
+		internal NullLogger()
+		{
+		}
+
 		/// <summary>
 		/// Does nothing.
 		/// </summary>

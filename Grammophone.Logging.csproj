@@ -50,6 +50,8 @@
     <Compile Include="Null\NullLogger.cs" />
     <Compile Include="Null\NullLoggerProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trace\TraceLogger.cs" />
+    <Compile Include="Trace\TraceLoggerProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Grammophone.Caching\Grammophone.Caching.csproj">
