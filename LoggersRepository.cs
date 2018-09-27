@@ -11,7 +11,7 @@ namespace Grammophone.Logging
 	/// Repository for obtaining loggers using an underlying <see cref="ILoggerProvider"/>.
 	/// The most frequently used loggers are cached.
 	/// </summary>
-	public class LoggerRepository
+	public class LoggersRepository
 	{
 		#region Private fields
 
@@ -28,7 +28,7 @@ namespace Grammophone.Logging
 		/// </summary>
 		/// <param name="loggerProvider">The provider used to create the requested loggers.</param>
 		/// <param name="cacheSize">The size of the cache holding the most frequently used loggers.</param>
-		public LoggerRepository(ILoggerProvider loggerProvider, int cacheSize = 4096)
+		public LoggersRepository(ILoggerProvider loggerProvider, int cacheSize = 4096)
 		{
 			if (loggerProvider == null) throw new ArgumentNullException(nameof(loggerProvider));
 
@@ -47,7 +47,7 @@ namespace Grammophone.Logging
 		/// <returns>Returns the <see cref="ILogger"/> requested.</returns>
 		/// <remarks>
 		/// Uses caching to return frequently requested loggers.
-		/// The cache size is specified in the constructor of <see cref="LoggerRepository"/>.
+		/// The cache size is specified in the constructor of <see cref="LoggersRepository"/>.
 		/// </remarks>
 		public ILogger GetLogger(string loggerName) => loggersByNameCache.Get(loggerName);
 

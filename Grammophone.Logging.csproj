@@ -47,7 +47,7 @@
     <Compile Include="Composite\CompositeLoggerProvider.cs" />
     <Compile Include="ILogger.cs" />
     <Compile Include="ILoggerProvider.cs" />
-    <Compile Include="LoggerRepository.cs" />
+    <Compile Include="LoggersRepository.cs" />
     <Compile Include="LogLevel.cs" />
     <Compile Include="Null\NullLogger.cs" />
     <Compile Include="Null\NullLoggerProvider.cs" />
