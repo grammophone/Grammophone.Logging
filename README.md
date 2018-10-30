@@ -8,5 +8,7 @@ In order to invoke loggers efficiently, initialize a `LoggersRepository` with an
 method to obtain loggers. `LoggersRepository` is caching the frequently requested loggers and is thread-safe, so it can be
 a static member.
 
-The library has a dependency on [Grammophone.Caching](https://github.com/grammophone/Grammophone.Caching) which must reside
-in a sibling directory.
+You can support many logging frameworks at once by aggregating them
+using `Grammophone.Logging.Composite.CompositeLoggerProvider` which implements `ILoggerProvider` itself and accepts a collection of `ILoggerProvider` implenmentations in its constructor.
+
+The library has a dependency on [Grammophone.Caching](https://github.com/grammophone/Grammophone.Caching) which must reside in a sibling directory.
