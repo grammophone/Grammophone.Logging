@@ -9,6 +9,6 @@ method to obtain loggers. `LoggersRepository` is caching the frequently requeste
 a static member.
 
 You can support many logging frameworks at once by aggregating them
-using `Grammophone.Logging.Composite.CompositeLoggerProvider` which implements `ILoggerProvider` itself and accepts a collection of `ILoggerProvider` implenmentations in its constructor.
+using `Grammophone.Logging.Composite.CompositeLoggerProvider` which implements `ILoggerProvider` itself and accepts a collection of `ILoggerProvider` implementations in its constructor.
 
 The library has a dependency on [Grammophone.Caching](https://github.com/grammophone/Grammophone.Caching) which must reside in a sibling directory.
