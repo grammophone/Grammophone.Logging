@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <ProjectGuid>{C2C480F7-1E78-4D70-B946-E365A9C8F7DF}</ProjectGuid>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyTitle>Grammophone.Logging</AssemblyTitle>
     <Product>Grammophone.Logging</Product>
     <Copyright>Copyright ©  2018</Copyright>
